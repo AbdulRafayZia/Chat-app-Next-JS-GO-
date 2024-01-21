@@ -1,10 +1,12 @@
-import Login from "./Components/Login/login";
+import Sidebar from "./sidebar/page";
+import Page from "./login/page";
 
 
 export default function Home() {
   return (
     <>
-    <Login/>
+    {/* <Page/> */}
+    <Sidebar/>
     </>
   );
 }

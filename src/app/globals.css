@@ -4,6 +4,8 @@
 
 :root {
   --background: var(--Blue, linear-gradient(180deg, #0575E6 0%, #02298A 84.79%, #021B79 100%));
+  --nav-background: #F0F2F5;
+  --sidebar-background: #FFF;
 }
 body{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
