@@ -1,16 +1,15 @@
-
-# GoChat Application
+# Next.js Chat Application Frontend
 
 ## Introduction
 
-GoChat is a simple chat application built in Golang, utilizing WebSocket for individual user messaging, creating and joining chat rooms, and chatting within those rooms. Additionally, the application provides user authentication functionalities through HTTPS GET and POST requests for signup and login.
+This project is the frontend implementation of a chat application using Next.js, a React framework for building server-side rendered and statically generated web applications. The chat application provides real-time messaging functionalities, allowing users to engage in individual and group conversations.
 
 ## Features
 
-- **Individual Messaging:** Users can send and receive messages privately through WebSocket connections.
-- **Room Creation and Joining:** Users can create chat rooms and join existing ones to engage in group conversations.
-- **Room Chat:** Users can exchange messages within chat rooms with other participants.
-- **User Authentication:** Secure signup and login functionalities are provided through HTTPS GET and POST requests.
+- **Real-time Messaging:** Utilizes WebSocket for real-time messaging between users.
+- **User Authentication:** Provides secure signup and login functionalities.
+- **Chat Rooms:** Supports creating and joining chat rooms for group conversations.
+- **Responsive Design:** Ensures optimal user experience across various devices and screen sizes.
 
 ## Installation
 
@@ -23,24 +22,24 @@ GoChat is a simple chat application built in Golang, utilizing WebSocket for ind
 2. Navigate to the project directory:
 
    ```bash
-   cd gochat
+   cd Chat-app-Next-JS-GO-
    ```
 
 3. Install dependencies:
 
    ```bash
-   go mod tidy
+   npm install
    ```
 
 ## Usage
 
-1. Start the server:
+1. Start the development server:
 
    ```bash
-   go run main.go
+   npm run dev
    ```
 
-2. Access the application through your web browser at `http://localhost:8080`.
+2. Access the application through your web browser at `http://localhost:3000`.
 
 3. Signup for a new account or login with existing credentials.
 
@@ -50,10 +49,11 @@ GoChat is a simple chat application built in Golang, utilizing WebSocket for ind
 
 ## Technologies Used
 
-- **Golang:** Backend server and application logic are implemented in Golang.
-- **WebSocket:** WebSocket protocol is utilized for real-time messaging between users.
-- **HTTP:** HTTPS GET and POST requests are used for user authentication.
-- **HTML/CSS/JavaScript:** Frontend user interface and interaction are implemented using web technologies.
+- **Next.js:** React framework for building server-side rendered and statically generated web applications.
+- **React:** JavaScript library for building user interfaces.
+- **WebSocket:** Protocol for real-time messaging between users.
+- **CSS Modules:** CSS styling scoped to individual components.
+- **Axios:** HTTP client for making requests to the backend server.
 
 ## Contributing
 
