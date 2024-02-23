@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# GoChat Application
 
-First, run the development server:
+## Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+GoChat is a simple chat application built in Golang, utilizing WebSocket for individual user messaging, creating and joining chat rooms, and chatting within those rooms. Additionally, the application provides user authentication functionalities through HTTPS GET and POST requests for signup and login.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Individual Messaging:** Users can send and receive messages privately through WebSocket connections.
+- **Room Creation and Joining:** Users can create chat rooms and join existing ones to engage in group conversations.
+- **Room Chat:** Users can exchange messages within chat rooms with other participants.
+- **User Authentication:** Secure signup and login functionalities are provided through HTTPS GET and POST requests.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Installation
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/AbdulRafayZia/Chat-app-Next-JS-GO-.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navigate to the project directory:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   cd gochat
+   ```
 
-## Deploy on Vercel
+3. Install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   go mod tidy
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Usage
+
+1. Start the server:
+
+   ```bash
+   go run main.go
+   ```
+
+2. Access the application through your web browser at `http://localhost:8080`.
+
+3. Signup for a new account or login with existing credentials.
+
+4. Create a new chat room or join an existing one.
+
+5. Start chatting with other users in individual messages or within chat rooms.
+
+## Technologies Used
+
+- **Golang:** Backend server and application logic are implemented in Golang.
+- **WebSocket:** WebSocket protocol is utilized for real-time messaging between users.
+- **HTTP:** HTTPS GET and POST requests are used for user authentication.
+- **HTML/CSS/JavaScript:** Frontend user interface and interaction are implemented using web technologies.
+
+## Contributing
+
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code for personal or commercial purposes.
